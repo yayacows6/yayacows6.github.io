@@ -834,7 +834,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
   background-color: #3D61AB;
   padding: 2.5rem;
-  border-radius: 20px;overflow: hidden
+  border-radius: 20px;overflow: hidden;position: relative
 
 }
 .fix_content .section-title:after {
