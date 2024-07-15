@@ -67,6 +67,8 @@ input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
   font-size: 1rem;
   visibility: visible !important;
 }
+
+#head_include{position: relative;z-index: 999}
 .cur-point {
   cursor: pointer
 }
