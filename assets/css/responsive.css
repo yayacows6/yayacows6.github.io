@@ -9,13 +9,13 @@
     height: 57px;
   }
   .top_navbar {
-    /* position: fixed;
+     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background: #fff;
     z-index: 2;
-    box-shadow: rgba(0, 0, 0, 0.15)0px 4px 8px 0;*/
+   /* box-shadow: rgba(0, 0, 0, 0.15)0px 4px 8px 0;*/
   }
   .top_navbar {}
   .menu-container {
