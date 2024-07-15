@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   dropdowns.forEach(dropdown => {
-    dropdown.addEventListener("click", (e) => {
+    dropdown.addEventListener("click", () => {
       dropdown.classList.toggle('act');
       dropdown.nextElementSibling.classList.toggle('menu-show');
     });
