@@ -8,7 +8,7 @@
     width: 130px;
     height: 57px;
   }
-  .top_navbar {
+  body[data-sidebar=medical]  .top_navbar {
      position: fixed;
     top: 0;
     left: 0;
