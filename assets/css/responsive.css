@@ -27,6 +27,7 @@
     overflow-y: hidden;
     transition: 0.3s ease-in-out;
     padding-bottom: 2rem;
+    z-index: 999;
   }
   .top_navbar .mega-menu::-webkit-scrollbar {
     width: 8px;
