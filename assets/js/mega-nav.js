@@ -26,15 +26,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  menuBtn.addEventListener('click', () => {
-    menu.classList.toggle('mega-menu-show');
-    toggleMenuIcon();
-  });
+  if (menuBtn && menu) {
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('mega-menu-show');
+      toggleMenuIcon();
+    });
+  }
 
   dropdowns.forEach(dropdown => {
-    dropdown.addEventListener("click", (e) => {
+    dropdown.addEventListener("click", () => {
       dropdown.classList.toggle('act');
-      dropdown.nextElementSibling.classList.toggle('menu-show');
+      if (dropdown.nextElementSibling) {
+        dropdown.nextElementSibling.classList.toggle('menu-show');
+      }
     });
   });
 

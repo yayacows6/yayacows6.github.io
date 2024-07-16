@@ -4,21 +4,96 @@
   body[data-sidebar=medical] .banner-content {
     padding-top: 5rem;
   }
+  .mega-menu ul {
+    display: none;
+  }
+  .mega-menu li {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .mega-menu input[type=checkbox] {
+    /* hide native checkbox */
+    position: absolute;
+    opacity: 0;
+  }
+  .mega-menu label, .mega-menuu a {
+    position: relative;
+    display: block;
+  }
+  .mega-menu label::before, .mega-menu label::after, .mega-menu a::after {
+    /* icons */
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .mega-menu label::before, .mega-menu label::after {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .mega-menu label::before {
+    right: 18px;
+    background-position: 0 0;
+    -webkit-transform: translateY(-50%) rotate(-90deg);
+    -moz-transform: translateY(-50%) rotate(-90deg);
+    -ms-transform: translateY(-50%) rotate(-90deg);
+    -o-transform: translateY(-50%) rotate(-90deg);
+    transform: translateY(-50%) rotate(-90deg);
+  }
+  .mega-menu label::after {
+    right: 41px;
+    background-position: -16px 0;
+  }
+  .mega-menu a::after {
+    left: 36px;
+  }
+  .mega-menu input[type=checkbox]:checked + label::before {
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .mega-menu input[type=checkbox]:checked + label::after {
+    background-position: -32px 0;
+  }
+  .mega-menu input[type=checkbox]:checked + label + ul, .mega-menu input[type=checkbox]:checked + label:nth-of-type(n) + ul {
+    display: block;
+  }
+  .mega-menu ul label, .mega-menu ul a {
+    padding-left: 1rem;
+  }
+  .mega-menu ul ul label, .mega-menu ul ul a {
+    padding-left: 2rem;
+  }
+  .mega-menu ul ul label::before {
+    left: 1rem;
+  }
   .top_navbar .navbar-brand {
     width: 130px;
     height: 57px;
   }
-  body[data-sidebar=medical]  .top_navbar {
-     position: fixed;
+  body[data-sidebar=medical] .top_navbar {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background: #fff;
     z-index: 2;
-   /* box-shadow: rgba(0, 0, 0, 0.15)0px 4px 8px 0;*/
+    /* box-shadow: rgba(0, 0, 0, 0.15)0px 4px 8px 0;*/
   }
   .top_navbar {}
-  .menu-container {
+ .mobile_top_toggle,.menu-container {
     background: #fff;
     position: fixed;
     top: 3rem;
@@ -384,6 +459,7 @@
 }
 @media(min-width: 576px) {}
 @media(min-width: 768px) {
+  /* @import url("assets/css/mega-nav.css");*/
   .banner-item-content {
     width: 52%;
     margin-left: 48%;

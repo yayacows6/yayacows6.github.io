@@ -67,8 +67,9 @@ input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
   font-size: 1rem;
   visibility: visible !important;
 }
-
-
+.text-wordkeep {
+  word-break: keep-all;
+}
 .cur-point {
   cursor: pointer
 }
@@ -121,7 +122,6 @@ input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
 .hr_gray {
   background-color: #A6ADB4;
 }
-.section-title span {}
 .gradient {
   font-weight: 700;
   display: inline-block;
@@ -209,6 +209,74 @@ input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
 .ind_btn div {
   font-size: 1.125rem;
   width: 100%;
+}
+.navbar-area {
+  font-family: var(--main-text-sty2)
+}
+.nav-tabs {
+  border: none;
+}
+.top_navbar .navbar-brand {
+  width: 146px;
+  height: 51px;
+  background: url(../../images/logo_syspower.svg) center center /100% no-repeat;
+  z-index: 7
+}
+.top_navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+.top_navbar .sub-dropdown, .top_nav_list {
+  width: 100%;
+}
+.top_nav_list {
+  display: flex;
+}
+.top_navbar .ul_all {
+  display: flex;
+  width: 100%;
+  display: inline-block;
+}
+.top_navbar .menu-btn {
+  margin-left: 1em;
+  background: none;
+  display: inline-block;
+}
+.top_navbar .dropdown > div, .top_navbar .sub-dropdown > div, .top_navbar .dropdown > div a {
+  cursor: pointer;
+  color: #333333;
+  color: var(--main-black);
+}
+.top_navbar .dropdown .menu a {
+  color: #666;
+  border: none;
+}
+.tab-pane:nth-child(2) .sub-dropdown:nth-child(1) i.rounded-circle, .pro_are > div:nth-child(1) .icon_pro {
+  background-image: url("../../images/icon_medical1.svg");
+  background-size: 62%;
+}
+.tab-pane:nth-child(2) .sub-dropdown:nth-child(2) i.rounded-circle, .pro_are > div:nth-child(2) .icon_pro {
+  background-image: url("../../images/icon_medical2.svg");
+}
+.tab-pane:nth-child(2) .sub-dropdown:nth-child(3) i.rounded-circle, .pro_are > div:nth-child(3) .icon_pro {
+  background-image: url("../../images/icon_medical3.svg");
+}
+.tab-pane:nth-child(2) .sub-dropdown:nth-child(4) i.rounded-circle, .pro_are > div:nth-child(4) .icon_pro {
+  background-image: url("../../images/icon_medical4.svg");
+}
+.tab-pane:nth-child(3) .sub-dropdown:nth-child(1) i.rounded-circle, .pro_are2 > div:nth-child(1) .icon_pro {
+  background-image: url("../../images/icon_medical5.svg");
+}
+.tab-pane:nth-child(3) .sub-dropdown:nth-child(2) i.rounded-circle, .pro_are2 > div:nth-child(2) .icon_pro {
+  background-image: url("../../images/icon_medical6.svg");
+}
+.tab-pane:nth-child(3) .sub-dropdown:nth-child(3) i.rounded-circle, .pro_are2 > div:nth-child(3) .icon_pro {
+  background-image: url("../../images/icon_medical7.svg");
+}
+.tab-pane:nth-child(3) .sub-dropdown:nth-child(4) i.rounded-circle, .pro_are2 > div:nth-child(4) .icon_pro {
+  background-image: url("../../images/icon_medical8.svg");
 }
 .ind_banner {
   padding: 2rem 0;
