@@ -17,13 +17,13 @@
   background-image: url("../../images/icon_about1.svg");
 }
 .top_navbar .dropdown:nth-child(1) .menu .sub-dropdown:nth-child(2) i.rounded-circle {
-  background-image: url("../../images/icon_about2.svg");
+  background-image: url("../../images/icon_about2.svg");        background-size: 45%;
 }
 .top_navbar .dropdown:nth-child(1) .menu .sub-dropdown:nth-child(3) i.rounded-circle {
   background-image: url("../../images/icon_about3.svg");
 }
 .top_navbar .dropdown:nth-child(1) .menu .sub-dropdown:nth-child(4) i.rounded-circle {
-  background-image: url("../../images/icon_about4.svg");
+  background-image: url("../../images/icon_about4.svg");background-size: 65%;
 }
 .top_navbar .dropdown:nth-child(4) .menu .sub-dropdown:nth-child(1) i.rounded-circle {
   background-image: url("../../images/icon_financial1.svg");
@@ -35,10 +35,10 @@
   background-image: url("../../images/icon_financial3.svg");
 }
 .top_navbar .dropdown:nth-child(4) .menu .sub-dropdown:nth-child(4) i.rounded-circle {
-  background-image: url("../../images/icon_financial4.svg");
+  background-image: url("../../images/icon_financial4.svg");background-size: 43%;
 }
 .top_navbar .dropdown:nth-child(4) .menu .sub-dropdown:nth-child(5) i.rounded-circle {
-  background-image: url("../../images/icon_financial5.svg");
+  background-image: url("../../images/icon_financial5.svg");background-size: 43%;
 }
 .top_navbar .icon_chevron {
   /*display: inline-block;
